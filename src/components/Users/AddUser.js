@@ -45,7 +45,7 @@ const AddUser = (props) => {
     };
 
     return (
-        <div>
+        <>
            {error && <ErrorModal title={error.title} message={error.message} onConfirm={errorHandler}/>}
             <Card className={classes.input}>
 
@@ -60,7 +60,7 @@ const AddUser = (props) => {
 
                 </form>
             </Card>
-        </div>
+        </>
 
 
     );

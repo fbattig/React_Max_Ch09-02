@@ -4,7 +4,7 @@ import Button from './Button';
 import classes from './ErrorModal.module.css';
 const ErrorModal = (props) => {
     return (
-        <div>
+        <>
             <div className={classes.backdrop} onClick={props.onConfirm} />
             <Card className={classes.modal}>
 
@@ -18,7 +18,7 @@ const ErrorModal = (props) => {
                     <Button  onClick={props.onConfirm} >Ok</Button>
                 </footer>
             </Card>
-        </div>
+        </>
     );
 
 }
